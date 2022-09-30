@@ -57,7 +57,7 @@ const handleCalcolation = (event) => {
             }
             for(let y=0; y<display.length; y++) {
                 if(display[y]==",") {
-                    display.splice(i, 1);
+                    display.splice(y, 1);
                 }
             }
 
@@ -85,6 +85,8 @@ const handleCalcolation = (event) => {
                 result=(parseFloat(numbTwo)/100) * parseFloat(numbOne);
                 break;
         }
+
+        result = addCommas(result);
 
         //Clearing main display and rendering result on top screen. But if button pressed was equal render opertion on main screen
             const displayToRender= document.querySelector(".tempDisplay");
