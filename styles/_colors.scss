@@ -1,0 +1,40 @@
+@use "./typography" as *;
+
+.numbers, .zero, .dot {
+    background-color: rgb(65, 61, 56);
+    color: antiquewhite;
+    font-family: $buttons;
+    font-size: 1.5rem;
+}
+
+.CalculatorGrid {
+    background-color: antiquewhite;
+}
+
+.reset, .onButton {
+    background-color: rgb(189, 44, 44);
+    color: antiquewhite;
+    font-family: $buttons;
+    font-size: 1.5rem;
+}
+
+.operator, .negative {
+    background-color: rgb(41, 84, 240);
+    color: antiquewhite;
+    font-family: $buttons;
+    font-size: 1.5rem;
+}
+
+.calculator {
+    color: rgb(65, 61, 56);
+    font-family: $buttons;
+    font-size: 2rem;
+    justify-self: self-start;
+    margin-left: 5vw;
+    font-weight: bolder;
+}
+
+.tempDisplay, .result {
+    background-color: rgb(65, 61, 56);
+    color: rgb(192, 12, 12);
+}

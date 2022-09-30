@@ -1,5 +1,8 @@
 @use "./gridPositioning" as *;
 @use "./buttonsDesign" as *;
+@use "./animation" as *;
+@use "./onlyCSSanimation" as *;
+@use "./colors" as *;
 
 * {
     margin: 0px;

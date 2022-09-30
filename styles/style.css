@@ -5,7 +5,7 @@
   gap: 0.5vh;
   width: 100vh;
   height: 100vh;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   text-align: center;
 }
@@ -106,27 +106,40 @@
   grid-column: 1/5;
 }
 
+@font-face {
+  font-family: "Hyperspace";
+  src: url(../resources/Hyperspace\ Bold.ttf);
+}
+@font-face {
+  font-family: "Vector";
+  src: url(../resources/VectorBattle-e9XO.ttf);
+}
 .numbers, .operator, .reset, .onButton, .dot, .negative {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
+  border-radius: 2%;
+  height: 90%;
+  width: 90%;
 }
 
-#Zero, .result {
-  height: 100%;
-  width: 100%;
-  border-radius: 25px;
+.result, .tempDisplay {
+  width: 98%;
+  height: 98%;
+  border-radius: 2%;
+}
+
+#Zero {
+  height: 90%;
+  border-radius: 2%;
+  width: 96%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .operator, .negative {
   background-color: rgb(218, 248, 248);
-}
-
-.numbers, #Zero, .dot {
-  background-color: orange;
 }
 
 .reset {
@@ -138,6 +151,9 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  font-family: Hyperspace;
+  font-size: 2.3rem;
+  font-weight: bold;
 }
 
 .onButton {
@@ -148,17 +164,71 @@
   color: hotpink;
 }
 
-#Zero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.on {
+  color: red;
+  background-color: yellow;
+  -webkit-animation: flip-horizontal-bottom 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both;
+  animation: flip-horizontal-bottom 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both;
 }
 
-.tempDisplay {
-  width: 100%;
-  height: 50%;
-  align-self: flex-end;
-  border-radius: 25px;
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+.button:active, .onButton:active {
+  box-shadow: inset 0px 0px 15px #c1c1c1;
+  outline: none;
+}
+
+.numbers, .zero, .dot {
+  background-color: rgb(65, 61, 56);
+  color: antiquewhite;
+  font-family: Vector;
+  font-size: 1.5rem;
+}
+
+.CalculatorGrid {
+  background-color: antiquewhite;
+}
+
+.reset, .onButton {
+  background-color: rgb(189, 44, 44);
+  color: antiquewhite;
+  font-family: Vector;
+  font-size: 1.5rem;
+}
+
+.operator, .negative {
+  background-color: rgb(41, 84, 240);
+  color: antiquewhite;
+  font-family: Vector;
+  font-size: 1.5rem;
+}
+
+.calculator {
+  color: rgb(65, 61, 56);
+  font-family: Vector;
+  font-size: 2rem;
+  justify-self: self-start;
+  margin-left: 5vw;
+  font-weight: bolder;
+}
+
+.tempDisplay, .result {
+  background-color: rgb(65, 61, 56);
+  color: rgb(192, 12, 12);
 }
 
 * {

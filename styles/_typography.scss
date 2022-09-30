@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Hyperspace";
+    src: url(../resources/Hyperspace\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "Vector";
+    src: url(../resources/VectorBattle-e9XO.ttf);
+}
+
+
+$screenFont: Hyperspace;
+$buttons: Vector;
