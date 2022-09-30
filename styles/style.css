@@ -106,7 +106,7 @@
   grid-column: 1/5;
 }
 
-.numbers, .operator, .reset, .onButton, .dot {
+.numbers, .operator, .reset, .onButton, .dot, .negative {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,7 +121,7 @@
   border-radius: 25px;
 }
 
-.operator {
+.operator, .negative {
   background-color: rgb(218, 248, 248);
 }
 
