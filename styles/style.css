@@ -1,6 +1,6 @@
 .CalculatorGrid {
   display: grid;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5vh;
   width: 100vh;
@@ -17,88 +17,92 @@
   grid-row: 1/2;
   grid-column: 4/5;
 }
-.CalculatorGrid .result {
+.CalculatorGrid .tempDisplay {
   grid-row: 2/3;
   grid-column: 1/5;
 }
+.CalculatorGrid .result {
+  grid-row: 3/4;
+  grid-column: 1/5;
+}
 .CalculatorGrid .zero {
-  grid-row: 7/8;
+  grid-row: 8/9;
   grid-column: 1/3;
 }
 .CalculatorGrid .dot {
-  grid-row: 7/8;
+  grid-row: 8/9;
   grid-column: 3/4;
 }
 .CalculatorGrid .equal {
-  grid-row: 7/8;
+  grid-row: 8/9;
   grid-column: 4/5;
 }
 .CalculatorGrid .one {
-  grid-row: 6/7;
+  grid-row: 7/8;
   grid-column: 1/2;
 }
 .CalculatorGrid .two {
-  grid-row: 6/7;
+  grid-row: 7/8;
   grid-column: 2/3;
 }
 .CalculatorGrid .three {
-  grid-row: 6/7;
+  grid-row: 7/8;
   grid-column: 3/4;
 }
 .CalculatorGrid .plus {
-  grid-row: 6/7;
+  grid-row: 7/8;
   grid-column: 4/5;
 }
 .CalculatorGrid .four {
-  grid-row: 5/6;
+  grid-row: 6/7;
   grid-column: 1/2;
 }
 .CalculatorGrid .five {
-  grid-row: 5/6;
+  grid-row: 6/7;
   grid-column: 2/3;
 }
 .CalculatorGrid .six {
-  grid-row: 5/6;
+  grid-row: 6/7;
   grid-column: 3/4;
 }
 .CalculatorGrid .minus {
-  grid-row: 5/6;
+  grid-row: 6/7;
   grid-column: 4/5;
 }
 .CalculatorGrid .seven {
-  grid-row: 4/5;
+  grid-row: 5/6;
   grid-column: 1/2;
 }
 .CalculatorGrid .eight {
-  grid-row: 4/5;
+  grid-row: 5/6;
   grid-column: 2/3;
 }
 .CalculatorGrid .nine {
-  grid-row: 4/5;
+  grid-row: 5/6;
   grid-column: 3/4;
 }
 .CalculatorGrid .moltiplication {
-  grid-row: 4/5;
+  grid-row: 5/6;
   grid-column: 4/5;
 }
 .CalculatorGrid .reset {
-  grid-row: 3/4;
+  grid-row: 4/5;
   grid-column: 1/2;
 }
 .CalculatorGrid .negative {
-  grid-row: 3/4;
+  grid-row: 4/5;
   grid-column: 2/3;
 }
 .CalculatorGrid .percentage {
-  grid-row: 3/4;
+  grid-row: 4/5;
   grid-column: 3/4;
 }
 .CalculatorGrid .division {
-  grid-row: 3/4;
+  grid-row: 4/5;
   grid-column: 4/5;
 }
 .CalculatorGrid .extraOptions {
-  grid-row: 8/9;
+  grid-row: 9/10;
   grid-column: 1/5;
 }
 
@@ -129,7 +133,7 @@
   background-color: rgb(229, 91, 188);
 }
 
-.result {
+.result, .tempDisplay {
   background-color: rgb(236, 236, 186);
   display: flex;
   justify-content: end;
@@ -148,6 +152,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.tempDisplay {
+  width: 100%;
+  height: 50%;
+  align-self: flex-end;
+  border-radius: 25px;
 }
 
 * {
