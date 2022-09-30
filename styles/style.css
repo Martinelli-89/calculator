@@ -102,7 +102,7 @@
   grid-column: 1/5;
 }
 
-.numbers, .operator, .reset, .onButton {
+.numbers, .operator, .reset, .onButton, .dot {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,7 +121,7 @@
   background-color: rgb(218, 248, 248);
 }
 
-.numbers, #Zero {
+.numbers, #Zero, .dot {
   background-color: orange;
 }
 

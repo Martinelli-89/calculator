@@ -8,7 +8,6 @@ const addZero = (event) => {
     
     //getting screen and saving it into variable
     const screen = document.querySelector(".result");
-    console.log(screen);
 
     //If checl to be sure users can't add more than one zero to screen
     if (screen.innerText == "") {
