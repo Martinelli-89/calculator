@@ -9,6 +9,13 @@ const addNumber = (event) => {
     
     //getting screen and saving it into variable
     const screen = document.querySelector(".result");
+    const topscreen = document.querySelector(".tempDisplay");
+    const active = document.querySelector(".active");
+    
+    //Checking top screen and if any operator is active. If none is active new operation is startin and top screen can be cleared
+    if (topscreen.innerText != "" && active==null) {
+        topscreen.innerText = "";
+    }
 
     //If - else : either the screen is empty or with a zero and I can just print the number, or something else is already on screen and number pressed needs to follow it
     if (screen.innerText == "" || screen.innerText == 0) {
