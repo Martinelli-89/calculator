@@ -1,0 +1,166 @@
+.CalculatorGrid {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5vh;
+  width: 100vh;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.CalculatorGrid .calculator {
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+.CalculatorGrid .onButton {
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+.CalculatorGrid .result {
+  grid-row: 2/3;
+  grid-column: 1/5;
+}
+.CalculatorGrid .zero {
+  grid-row: 7/8;
+  grid-column: 1/3;
+}
+.CalculatorGrid .dot {
+  grid-row: 7/8;
+  grid-column: 3/4;
+}
+.CalculatorGrid .equal {
+  grid-row: 7/8;
+  grid-column: 4/5;
+}
+.CalculatorGrid .one {
+  grid-row: 6/7;
+  grid-column: 1/2;
+}
+.CalculatorGrid .two {
+  grid-row: 6/7;
+  grid-column: 2/3;
+}
+.CalculatorGrid .three {
+  grid-row: 6/7;
+  grid-column: 3/4;
+}
+.CalculatorGrid .plus {
+  grid-row: 6/7;
+  grid-column: 4/5;
+}
+.CalculatorGrid .four {
+  grid-row: 5/6;
+  grid-column: 1/2;
+}
+.CalculatorGrid .five {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+.CalculatorGrid .six {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+.CalculatorGrid .minus {
+  grid-row: 5/6;
+  grid-column: 4/5;
+}
+.CalculatorGrid .seven {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+.CalculatorGrid .eight {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+.CalculatorGrid .nine {
+  grid-row: 4/5;
+  grid-column: 3/4;
+}
+.CalculatorGrid .moltiplication {
+  grid-row: 4/5;
+  grid-column: 4/5;
+}
+.CalculatorGrid .reset {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+.CalculatorGrid .negative {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.CalculatorGrid .percentage {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+.CalculatorGrid .division {
+  grid-row: 3/4;
+  grid-column: 4/5;
+}
+.CalculatorGrid .extraOptions {
+  grid-row: 8/9;
+  grid-column: 1/5;
+}
+
+.numbers, .operator, .reset, .onButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+#Zero, .result {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.operator {
+  background-color: rgb(218, 248, 248);
+}
+
+.numbers, #Zero {
+  background-color: orange;
+}
+
+.reset {
+  background-color: rgb(229, 91, 188);
+}
+
+.result {
+  background-color: rgb(236, 236, 186);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.onButton {
+  background-color: rgb(230, 96, 96);
+}
+
+.calculator {
+  color: hotpink;
+}
+
+#Zero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(45, 44, 44);
+}/*# sourceMappingURL=style.css.map */
