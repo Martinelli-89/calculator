@@ -86,6 +86,7 @@ const handleCalcolation = (event) => {
                 break;
         }
 
+        result = parseFloat(result.toFixed(6));
         result = addCommas(result);
 
         //Clearing main display and rendering result on top screen. But if button pressed was equal render opertion on main screen
