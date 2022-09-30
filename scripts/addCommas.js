@@ -1,29 +1,3 @@
-//function to addCommas
-/*
-const addCommas = (event) => {
-
-    let currentNumber = event.target.innerText;
-console.log("ciao");
-    const dotIndex = currentNumber.indexOf("."); //No need to iterate over digits that follow the dot. This number also represent how maby numbers there are before the dott, so with it we can work our how many commas we need to add
-
-    if(dotIndex == -1) {
-        return;
-    }
-
-    const commasToAdd = dotIndex % 4;
-
-    const stringToArray = currentNumber.split("");//converting stirng to array because it is easier to change it
-
-    //Iterating over array before converting to string to add commas
-    for(let i=dotIndex-3; i < commasToAdd; i=i-3) {
-        stringToArray[i].push(",");
-    }
-
-    const numberWithCommas = stringToArray.join('');
-
-    event.target.innerText = numberWithCommas;
-    alert("ciao");
-}*/
 
 //Getting screen element to inspect number and add commas if needed
 
@@ -36,6 +10,14 @@ const observer = new MutationObserver ((mutations, observer) => {
     const numbAfterDot = [];
     const numbBeforeDot = [];
     let reachedDot = false;
+
+    //Checking if number is negative before starting anything else. If it is remove negative sign before adding commas
+
+    const isNumbNegative = stringToArray.includes("-");
+    if(isNumbNegative == true) {
+        stringToArray.splice(0,1);
+    }
+
     for (let i=0; i<stringToArray.length; i++) {
         
         if (reachedDot == true || stringToArray[i] == ".") {
@@ -59,6 +41,10 @@ const observer = new MutationObserver ((mutations, observer) => {
         indexToStartCommas -=3;
     }
   
+    //If number was negative re adding the sign to the beginning
+    if(isNumbNegative==true) {
+        numbBeforeDot.splice(0, 0, "-");
+    }
 
     const numberWithCommas = numbBeforeDot.concat(numbAfterDot).join('');
     
