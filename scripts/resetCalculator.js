@@ -4,6 +4,11 @@ const reset = document.querySelector(".reset");
 //Function to reset the screen
 const clearScreen = () => {
 
+    //Check if calculator is on. If not button is not working
+    if(isCalcOn()!=true) {
+        return;
+    }
+
     //Takes both screen element to reset
     const screen = document.querySelector(".result");
     const screen2 = document.querySelector(".tempDisplay");

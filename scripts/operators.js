@@ -4,6 +4,11 @@ const display = document.querySelector(".result");
 
 const handleCalcolation = (event) => {
 
+    //Check if calculator is on. If not button is not working
+    if(isCalcOn()!=true) {
+        return;
+    }
+
     let wasEqualPressed = false;
     if(event.target.id == "equal") {
         wasEqualPressed = true;

@@ -5,6 +5,11 @@ const dot = document.querySelector(".dot");
 //function to add a number to the screen when clicked
 
 const addDot = (event) => {
+
+    //Check if calculator is on. If not button is not working
+    if(isCalcOn()!=true) {
+        return;
+    }
     
     //getting screen and saving it into variable
     const screen = document.querySelector(".result");
