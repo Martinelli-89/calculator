@@ -1,0 +1,42 @@
+@use "./typography" as *;
+
+.changeStyle {
+    grid-row: 9 / 10;
+    grid-column: 2 / 4;
+
+    background-color: rgb(65, 61, 56);
+    border-radius: 25px;
+
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .slider {
+        border-radius: 50%;
+        background-color: rgb(189, 44, 44);
+        height: 60%;
+        width: 20%;
+        margin-left: 2.5vw;;
+    }
+
+}
+
+.grandma {
+
+    font-family: $other;
+    text-align: end;
+    font-size: 1.2rem;
+    transform: translateX(7vw);
+
+}
+
+.slick {
+
+    font-family: $other;
+    text-align: start;
+    font-size: 1.2rem;
+    transform: translateX(-7vw);
+
+}

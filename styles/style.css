@@ -114,6 +114,10 @@
   font-family: "Vector";
   src: url(../resources/VectorBattle-e9XO.ttf);
 }
+@font-face {
+  font-family: "squareHead";
+  src: url(../resources/sf-square-head.condensed.ttf);
+}
 .numbers, .operator, .reset, .onButton, .dot, .negative {
   display: flex;
   align-items: center;
@@ -188,8 +192,7 @@
   }
 }
 .button:active, .onButton:active {
-  box-shadow: inset 0px 0px 15px #c1c1c1;
-  outline: none;
+  box-shadow: inset 0px 0px 10px #090909;
 }
 
 .numbers, .zero, .dot {
@@ -229,6 +232,39 @@
 .tempDisplay, .result {
   background-color: rgb(65, 61, 56);
   color: rgb(192, 12, 12);
+}
+
+.changeStyle {
+  grid-row: 9/10;
+  grid-column: 2/4;
+  background-color: rgb(65, 61, 56);
+  border-radius: 25px;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.changeStyle .slider {
+  border-radius: 50%;
+  background-color: rgb(189, 44, 44);
+  height: 60%;
+  width: 20%;
+  margin-left: 2.5vw;
+}
+
+.grandma {
+  font-family: squarehead;
+  text-align: end;
+  font-size: 1.2rem;
+  transform: translateX(7vw);
+}
+
+.slick {
+  font-family: squarehead;
+  text-align: start;
+  font-size: 1.2rem;
+  transform: translateX(-7vw);
 }
 
 * {

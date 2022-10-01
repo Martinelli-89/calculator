@@ -8,6 +8,12 @@
     src: url(../resources/VectorBattle-e9XO.ttf);
 }
 
+@font-face {
+    font-family: "squareHead";
+    src: url(../resources/sf-square-head.condensed.ttf);
+}
+
 
 $screenFont: Hyperspace;
 $buttons: Vector;
+$other: squarehead;
