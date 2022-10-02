@@ -1,7 +1,7 @@
 const addCommas = (number) => {
 
-    let indexToStartCommas;
-    let numb = number.toString();
+    let indexToStartCommas; // Will store index from which start iterating in case numbers has any decimals
+    let numb = number.toString(); 
     const stringToArray = numb.split('');
     const numbAfterDot = [];
     const numbBeforeDot = [];

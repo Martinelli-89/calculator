@@ -1,6 +1,6 @@
 const changeStyle = (value) => {
 
-    if(value=="new") {
+    if(value=="new") {  //change all classes name to load correct style
 
         const calculator = document.querySelector(".calculator");
         calculator.classList.add("calculatorNew");

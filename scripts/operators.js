@@ -13,10 +13,11 @@ const handleCalcolation = (event) => {
         return;
     }
 
+    //Check to find out if the button that fire the event listener was pressing thr equal button
     let wasEqualPressed = false;
     if(event.target.id == "equal") {
         wasEqualPressed = true;
-    }
+    } //If the equal button was pressed but no values are on both screens nothing happens
     if (wasEqualPressed == true && (tempDisplay.innerText == "" || display.innerText=="")) {
         return;
     }
