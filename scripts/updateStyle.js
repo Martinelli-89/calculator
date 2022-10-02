@@ -6,12 +6,12 @@ const updateStyle = () => {
     const style = document.querySelector(".old");
 
     if(style!=null) {
-        updateSliderClass.classList.add("new");
-        updateSliderClass.classList.remove("old");
+        updateSliderClass.classList.add("new","slideRight");
+        updateSliderClass.classList.remove("old","slideLeft");
         changeStyle("new");
     } else {
-        updateSliderClass.classList.add("old");
-        updateSliderClass.classList.remove("new");
+        updateSliderClass.classList.add("old", "slideLeft");
+        updateSliderClass.classList.remove("new","slideRight");
         changeStyle("old");
     }
 }

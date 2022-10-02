@@ -10,7 +10,6 @@
     width: 60%;
     height: 50%;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 
     .slider {
@@ -34,7 +33,7 @@
 
 .slick {
 
-    font-family: $other;
+    font-family: Helvetica;
     text-align: start;
     font-size: 1.2rem;
     transform: translateX(-7vw);
