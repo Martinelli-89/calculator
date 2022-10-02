@@ -1,5 +1,9 @@
 //Takes reset element so we can attache and event listener to it
-const reset = document.querySelector(".reset");
+let reset = document.querySelector(".reset");
+if (reset == null) {
+    reset = document.querySelector(".resetNew");
+}
+
 
 //Function to reset the screen
 const clearScreen = () => {
@@ -10,8 +14,12 @@ const clearScreen = () => {
     }
 
     //Takes both screen element to reset
-    const screen = document.querySelector(".result");
-    const screen2 = document.querySelector(".tempDisplay");
+    let screen = document.querySelector(".result");
+    let screen2 = document.querySelector(".tempDisplay");
+        if (screen == null) {
+            screen = document.querySelector(".resultNew");
+            screen2 = document.querySelector(".tempDisplayNew");
+        }
     screen.innerText = "";
     screen2.innerText = "";
 

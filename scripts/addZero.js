@@ -1,10 +1,13 @@
 //getting the element tha hold the zero
 
-const zero = document.getElementById("Zero");
+let zero = document.querySelector(".zero");
+if ( zero == null ) {
+    zero = document.querySelector(".zeroNew");
+}
 
 //function to add a number to the screen when clicked
 
-const addZero = (event) => {
+const addZero = () => {
 
     //Check if calculator is on. If not button is not working
     if(isCalcOn()!=true) {
@@ -12,13 +15,14 @@ const addZero = (event) => {
     }
     
     //getting screen and saving it into variable
-    const screen = document.querySelector(".result");
+    let screen = document.querySelector(".result");
+    if (screen == null) {
+        screen = document.querySelector(".resultNew");
+    }
 
     //If checl to be sure users can't add more than one zero to screen
-    if (screen.innerText == "") {
-        screen.innerText=event.target.innerText;
-    } else if (screen.innerText != 0) {
-        screen.innerText+=event.target.innerText;
+    if (screen.innerText != "0") {
+        screen.innerText = screen.innerText + "0";
     }
 }
 

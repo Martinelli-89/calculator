@@ -1,6 +1,9 @@
 //getting all numbers element, other than zero which will be handled separately, to attach event listener
 
-const numbers = document.querySelectorAll(".numbers");
+let numbers = document.querySelectorAll(".numbers");
+if(numbers==null) {
+    numbers = document.querySelectorAll(".numbersNew");
+}
 
 
 //function to add a number to the screen when clicked
@@ -13,9 +16,13 @@ const addNumber = (event) => {
     }
     
     //getting screen and saving it into variable
-    const screen = document.querySelector(".result");
-    const topscreen = document.querySelector(".tempDisplay");
+    let screen = document.querySelector(".result");
+    let topscreen = document.querySelector(".tempDisplay");
     const active = document.querySelector(".active");
+    if (screen==null) {
+        screen = document.querySelector(".resultNew");
+        topscreen = document.querySelector(".tempDisplayNew");
+    }
     
     //Checking top screen and if any operator is active. If none is active new operation is startin and top screen can be cleared
     if (topscreen.innerText != "" && active==null) {
@@ -23,7 +30,7 @@ const addNumber = (event) => {
     }
 
     //If - else : either the screen is empty or with a zero and I can just print the number, or something else is already on screen and number pressed needs to follow it
-    if (screen.innerText == "" || screen.innerText == 0) {
+    if (screen.innerText == "" || screen.innerText == "0") {
         screen.innerText=event.target.innerText;
     } else {
         screen.innerText+=event.target.innerText;

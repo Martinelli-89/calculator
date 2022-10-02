@@ -1,6 +1,9 @@
 //getting the element tha hold the zero
 
-const dot = document.querySelector(".dot");
+let dot = document.querySelector(".dot");
+if(dot ==null) {
+    dot = document.querySelector(".dotNew");
+}
 
 //function to add a number to the screen when clicked
 
@@ -12,7 +15,11 @@ const addDot = (event) => {
     }
     
     //getting screen and saving it into variable
-    const screen = document.querySelector(".result");
+    let screen = document.querySelector(".result");
+    if(screen == null) {
+        screen = document.querySelector(".resultNew");
+    }
+
 
     const hasDotAlready = screen.innerText.includes(".");
 

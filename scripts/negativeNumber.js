@@ -1,6 +1,9 @@
 //getting the element that hold the negativve number button
 
-const negative = document.querySelector(".negative");
+let negative = document.querySelector(".negative");
+if (negative == null) {
+    negative = document.querySelector(".negativeNew");
+}
 
 //function to add a number to the screen when clicked
 
@@ -12,7 +15,10 @@ const toggleNumber = (event) => {
     }
     
     //getting screen and saving it into variable
-    const screen = document.querySelector(".result");
+    let screen = document.querySelector(".result");
+    if (screen == null) {
+        screen = document.querySelector(".resultNew");
+    }
 
     const numberOnScreen = screen.innerText;
     

@@ -133,7 +133,7 @@
   border-radius: 2%;
 }
 
-#Zero {
+.zero {
   height: 90%;
   border-radius: 2%;
   width: 96%;
@@ -142,16 +142,7 @@
   justify-content: center;
 }
 
-.operator, .negative {
-  background-color: rgb(218, 248, 248);
-}
-
-.reset {
-  background-color: rgb(229, 91, 188);
-}
-
 .result, .tempDisplay {
-  background-color: rgb(236, 236, 186);
   display: flex;
   justify-content: end;
   align-items: center;
@@ -162,10 +153,6 @@
 
 .onButton {
   background-color: rgb(230, 96, 96);
-}
-
-.calculator {
-  color: hotpink;
 }
 
 .on {
@@ -213,7 +200,7 @@
   font-size: 1.5rem;
 }
 
-.operator, .negative {
+.operator, .negative, #percentage {
   background-color: rgb(41, 84, 240);
   color: antiquewhite;
   font-family: Vector;
@@ -232,6 +219,7 @@
 .tempDisplay, .result {
   background-color: rgb(65, 61, 56);
   color: rgb(192, 12, 12);
+  padding-right: 2vw;
 }
 
 .changeStyle {
@@ -265,6 +253,224 @@
   text-align: start;
   font-size: 1.2rem;
   transform: translateX(-7vw);
+}
+
+.numbersNew, .operatorNew, .resetNew, .onButtonNew, .dotNew, .negativeNew {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 90%;
+  width: 90%;
+}
+
+.resultNew, .tempDisplayNew {
+  width: 98%;
+  height: 98%;
+}
+
+.zeroNew {
+  height: 90%;
+  border-radius: 50px;
+  width: 96%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.zeroNew span {
+  margin-left: 9vw;
+}
+
+.resultNew, .tempDisplayNew {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 2.3rem;
+}
+
+.numbersNew, .zeroNew, .dotNew {
+  background-color: #505050;
+  color: rgb(255, 255, 255);
+  font-family: Helvetica;
+  font-size: 1.5rem;
+}
+
+.CalculatorGridNew {
+  background-color: rgb(0, 0, 0);
+}
+
+.resetNew, .onButtonNew {
+  background-color: #D4D4D2;
+  color: rgb(0, 0, 0);
+  font-family: Helvetica;
+  font-size: 1.5rem;
+}
+
+.negativeNew, #percentageNew {
+  background-color: #D4D4D2;
+  color: rgb(0, 0, 0);
+  font-family: Helvetica;
+  font-size: 1.5rem;
+}
+
+.operatorNew {
+  background-color: #FF9500;
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.5rem;
+}
+
+.calculatorNew {
+  color: rgb(0, 0, 0);
+}
+
+.resultNew {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding-right: 2vw;
+}
+
+.tempDisplayNew {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.changeStyleNew {
+  grid-row: 9/10;
+  grid-column: 2/4;
+  background-color: rgb(65, 61, 56);
+  border-radius: 25px;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.changeStyleNew .sliderNew {
+  border-radius: 50%;
+  background-color: rgb(189, 44, 44);
+  height: 60%;
+  width: 20%;
+  margin-left: 2.5vw;
+}
+
+.grandmaNew {
+  font-family: squarehead;
+  text-align: end;
+  font-size: 1.2rem;
+  transform: translateX(7vw);
+}
+
+.slickNew {
+  font-family: squarehead;
+  text-align: start;
+  font-size: 1.2rem;
+  transform: translateX(-7vw);
+}
+
+.CalculatorGridNew {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5vh;
+  width: 100vh;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.CalculatorGridNew .calculatorNew {
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+.CalculatorGridNew .onButtonNew {
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+.CalculatorGridNew .tempDisplayNew {
+  grid-row: 2/3;
+  grid-column: 1/5;
+}
+.CalculatorGridNew .resultNew {
+  grid-row: 3/4;
+  grid-column: 1/5;
+}
+.CalculatorGridNew .zeroNew {
+  grid-row: 8/9;
+  grid-column: 1/3;
+}
+.CalculatorGridNew .dotNew {
+  grid-row: 8/9;
+  grid-column: 3/4;
+}
+.CalculatorGridNew .equalNew {
+  grid-row: 8/9;
+  grid-column: 4/5;
+}
+.CalculatorGridNew .one {
+  grid-row: 7/8;
+  grid-column: 1/2;
+}
+.CalculatorGridNew .two {
+  grid-row: 7/8;
+  grid-column: 2/3;
+}
+.CalculatorGridNew .three {
+  grid-row: 7/8;
+  grid-column: 3/4;
+}
+.CalculatorGridNew .plus {
+  grid-row: 7/8;
+  grid-column: 4/5;
+}
+.CalculatorGridNew .four {
+  grid-row: 6/7;
+  grid-column: 1/2;
+}
+.CalculatorGridNew .five {
+  grid-row: 6/7;
+  grid-column: 2/3;
+}
+.CalculatorGridNew .six {
+  grid-row: 6/7;
+  grid-column: 3/4;
+}
+.CalculatorGridNew .minus {
+  grid-row: 6/7;
+  grid-column: 4/5;
+}
+.CalculatorGridNew .seven {
+  grid-row: 5/6;
+  grid-column: 1/2;
+}
+.CalculatorGridNew .eight {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+.CalculatorGridNew .nine {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+.CalculatorGridNew .moltiplication {
+  grid-row: 5/6;
+  grid-column: 4/5;
+}
+.CalculatorGridNew .resetNew {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+.CalculatorGridNew .negativeNew {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+.CalculatorGridNew .percentage {
+  grid-row: 4/5;
+  grid-column: 3/4;
+}
+.CalculatorGridNew .division {
+  grid-row: 4/5;
+  grid-column: 4/5;
 }
 
 * {

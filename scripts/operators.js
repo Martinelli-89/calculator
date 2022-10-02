@@ -1,6 +1,10 @@
 //Getting values from both displays
-const tempDisplay = document.querySelector(".tempDisplay");
-const display = document.querySelector(".result");
+let tempDisplay = document.querySelector(".tempDisplay");
+let display = document.querySelector(".result");
+if (tempDisplay == null) {
+    tempDisplay = document.querySelector(".tempDisplayNew");
+    display = document.querySelector(".resultNew");
+}
 
 const handleCalcolation = (event) => {
 
@@ -52,8 +56,15 @@ const handleCalcolation = (event) => {
             getActiveOperators.classList.remove("active");
             event.target.classList.add("active");
         //Getting values from both screen and eliminating commas
-            const tempDisplay = (document.querySelector(".tempDisplay").innerText).split('');
-            const display = (document.querySelector(".result").innerText).split('');
+            let tempDisplay = document.querySelector(".tempDisplay");
+            let display;
+            if (tempDisplay != null) {
+                tempDisplay = (document.querySelector(".tempDisplay").innerText).split('');
+                display = (document.querySelector(".result").innerText).split('');
+            } else {
+                tempDisplay = (document.querySelector(".tempDisplayNew").innerText).split('');
+                display = (document.querySelector(".resultNew").innerText).split('');
+            }
         //Looping through values to eliminate commas
             for(let i=0; i<tempDisplay.length; i++) {
                 if(tempDisplay[i]==",") {
@@ -95,10 +106,16 @@ const handleCalcolation = (event) => {
         result = addCommas(result);
 
         //Clearing main display and rendering result on top screen. But if button pressed was equal render opertion on main screen
-            const displayToRender= document.querySelector(".tempDisplay");
+            let displayToRender= document.querySelector(".tempDisplay");
+            if (displayToRender == null) {
+                displayToRender= document.querySelector(".tempDisplayNew");
+            }
             displayToRender.innerText=result;
 
-            const displayToClear = document.querySelector(".result");
+            let displayToClear = document.querySelector(".result");
+            if (displayToClear==null) {
+                displayToClear = document.querySelector(".resultNew");
+            }
             displayToClear.innerText="";
 
             if(wasEqualPressed == true) {
