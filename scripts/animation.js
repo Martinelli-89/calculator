@@ -1,8 +1,12 @@
 const buttons = document.querySelectorAll(".button");
 
 const addAnimation = () => {
-    for(let i=0; i<buttons.length; i++) {
-        buttons[i].classList.add("on");
+
+    isIphoneOn = document.querySelector(".iPhone");
+    if(isIphoneOn != null) {
+        for(let i=0; i<buttons.length; i++) {
+            buttons[i].classList.add("on");
+        }
     }
 }
 
