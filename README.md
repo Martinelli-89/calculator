@@ -16,5 +16,5 @@
  </h4>
  <br>
  <h2> Calculator requirements and functionality </h2>
- <h3>You only need a browser to use the calculator.<br> Before performing any operation the calculator needs to be turned on using the on/off button.
- <br>The calculator can perform consecutives operation if needed and has a button to change the look of it.</h3>
+ <h4>You only need a browser to use the calculator.<br> Before performing any operation the calculator needs to be turned on using the on/off button.
+ <br>The calculator can perform consecutives operation if needed and has a button to change the look of it.</h4>
