@@ -25,7 +25,9 @@ const turnOnOff = () => {
             display2 = document.querySelector(".tempDisplayNew");
         }
         const activeBut = document.querySelector(".active");
-        activeBut.classList.remove("active");
+        if(activeBut != null) {
+            activeBut.classList.remove("active");
+        }
 
         display1.innerText="";
         display2.innerText="";

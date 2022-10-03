@@ -4,6 +4,10 @@
     -moz-box-shadow: inset 0px 0px 10px #0d0d0d;
          box-shadow: inset 0px 0px 10px #090909;
 
+}
 
+.buttonNew:active, .onButtonNew:active {
+
+    filter: brightness(130%);
 
 }

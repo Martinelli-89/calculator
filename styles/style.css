@@ -215,6 +215,10 @@
   box-shadow: inset 0px 0px 10px #090909;
 }
 
+.buttonNew:active, .onButtonNew:active {
+  filter: brightness(130%);
+}
+
 .numbers, .zero, .dot {
   background-color: rgb(65, 61, 56);
   color: antiquewhite;
@@ -365,7 +369,7 @@
 
 .tempDisplayNew {
   background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .CalculatorGridNew {
@@ -487,6 +491,6 @@ body {
 }
 
 .active {
-  color: red;
+  filter: brightness(130%);
   font-weight: bolder;
 }/*# sourceMappingURL=style.css.map */
