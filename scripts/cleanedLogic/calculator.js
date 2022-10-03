@@ -224,7 +224,7 @@
         if (numberOnScreen =="") {
             mainScreen.innerText= "-";
         } else if (numberOnScreen =="-") {
-            screen.innerText= "";
+            mainScreen.innerText= "";
         } else {
         
             const isNumberNegative = numberOnScreen.includes("-");
