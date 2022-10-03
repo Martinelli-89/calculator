@@ -497,6 +497,10 @@ body {
   border: 2px solid rgb(179, 66, 66);
 }
 
+.power {
+  background-color: green;
+}
+
 @media screen and (min-width: 1000px) {
   .CalculatorGrid, .CalculatorGridNew {
     width: 30%;
