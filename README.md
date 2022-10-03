@@ -17,4 +17,8 @@
  <br>
  <h2> Calculator requirements and functionality </h2>
  <h4>You only need a browser to use the calculator.<br> Before performing any operation the calculator needs to be turned on using the on/off button.
- <br>The calculator can perform consecutives operation if needed and has a button to change the look of it.</h4>
+ <br>The calculator can perform consecutives operation if needed and has a button to change the look of it.
+ <br> I should have stopped any possibility for the user to make the calculator stop working so, if you manage to break it, please let me know so I can fix the code :) .</h4>
+ <br>
+ <h2> Extra <h2>
+ <h4> <br> I would like to a function that convert number to exponential when they are too long to be displayed</h4>
