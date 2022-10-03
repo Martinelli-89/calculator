@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(206, 164, 109);
 }
 
 .active {
@@ -29,3 +30,27 @@ body {
     font-weight: bolder;
     border: 2px solid rgb(179, 66, 66);
 }
+
+@media screen and (min-width: 1000px) {
+    
+    .CalculatorGrid, .CalculatorGridNew {
+
+        width: 30%;
+        height: 90%;
+    }
+
+    .grandma {
+        transform: translateX(-2%);
+    }
+
+    .slick {
+        transform: translateX(2%);
+    }
+
+    .changeStyle {
+        .slider {
+            margin-left: 0.5vw;
+        }
+    }
+
+  }
