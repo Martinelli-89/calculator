@@ -10,7 +10,7 @@
 <body>
     <section class="CalculatorGrid">
         <div class="calculator">CASIO</div>
-        <div class="onButton onOff"> On</div>
+        <div class="onButton onOff" id="on"> On</div>
         <div class="result" id="display"></div>
         <div class="tempDisplay" id="topDisplay"></div>
         <div class="button numbers one">1</div>
@@ -23,9 +23,9 @@
         <div class="button numbers eight">8</div>
         <div class="button numbers nine">9</div>
         <div class="button zero" id="Zero"><span>0</span></div>
-        <div class="button dot">.</div>
-        <div class="button reset">C</div>
-        <div class="button negative"> +  - </div>
+        <div class="button dot" id="dot">.</div>
+        <div class="button reset" id="reset">C</div>
+        <div class="button negative" id="negative"> +  - </div>
         <div class="button operator" id="percentage">%</div>
         <div class="button operator" id="division">/</div> 
         <div class="button operator" id="moltiplication">x</div> 
@@ -38,17 +38,10 @@
         <div class="grandma">Grandma calculator</div>
         <div class="slick">Your slick Iphone</div>
     </section>
-    <script src="./scripts/resetCalculator.js"></script>
-    <script src="./scripts/addNumber.js"></script>
-    <script src="./scripts/addZero.js"></script>
     <script src="./scripts/addCommas.js"></script>
-    <script src="./scripts/addDot.js"></script>
-    <script src="./scripts/negativeNumber.js"></script>
-    <script src="./scripts/operators.js"></script>
     <script src="./scripts/functionAddCommas.js"></script>
-    <script src="./scripts/isCalcOn.js"></script>
-    <script src="./scripts/turnOnOff.js"></script>
-    <script src="./scripts/changeStyle.js"></script>
-    <script src="./scripts/updateStyle.js"></script>
+    <script src="./scripts/cleanedLogic/calculator.js"></script>
+    <script src="./scripts/cleanedLogic/changeLook.js"></script>
+
 </body>
 </html>
