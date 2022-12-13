@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "<h1> Another Calculator </h1>",
+  "main": "index.js",
+  "scripts": {
+    "cypress" : "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martinelli-89/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martinelli-89/calculator/issues"
+  },
+  "homepage": "https://github.com/Martinelli-89/calculator#readme",
+  "devDependencies": {
+    "cypress": "^10.10.0"
+  }
+}
